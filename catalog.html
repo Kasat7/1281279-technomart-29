@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
 
       <div class="top-header">
-          <a href="#" class="logo">Техномарт</a>
+          <a class="logo" href="#">Техномарт</a>
         <form>
           <input type="text" id="search">
-          <label for="search" class="search">Поиск:</label>
+          <label class="search" for="search">Поиск:</label>
         </form>
           <a href="#" class="header-bookmarks">Закладки: 0</a>
           <a href="#" class="basket">Корзина: 10</a>
@@ -22,7 +23,7 @@
 
       <div class="info-header">
         <p class="info-header-paragraph">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a href="tel:+78125550555" class="phone"> +7 (812) 555-05-55</a>
+        <a class="phone" href="tel:+78125550555"> +7 (812) 555-05-55</a>
         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
      
        <div class="account">
@@ -192,15 +193,15 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55</p>
         </div>
-        <div class="footer-list-nav">
-          <ul class="footer-list-nav-1">
+        <div class="footer-list-menu">
+          <ul class="footer-list-menu-top">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="footer-list-nav-2">
+          <ul class="footer-list-menu-bottom">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструменты</a></li>
@@ -210,7 +211,7 @@
       </section>
 
         <section class="footer-connection">
-          <div>
+          <div class="company-rights">
            <p>© 2010–2019 Компания «Техномарт» 
             Все права защищены</p>
           </div>

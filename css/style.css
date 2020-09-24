@@ -46,9 +46,9 @@
     --container-delivery-orange: #FFC047;
 
     /* .information-button */
-    --information-button-reset: #FFFFFF;
-    --information-button-hover: #C5C5C5;
-    --information-button-active: #A9A9A9;
+    --information-button-reset: #ffffff50;
+    --information-button-hover: #c5c5c550;
+    --information-button-active: #a9a9a950;
 
     /* .slider-paragraph */
     --slider-paragraph: rgba(0, 0, 0, 0.25);
@@ -115,7 +115,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cuprum";
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -280,20 +280,17 @@ a {
     text-align: center;
     background-color: var(--information-button-reset);
     mix-blend-mode: normal;
-    opacity: 0.3;
     color: var(--basic-white);
 }
 
 .information-button:hover {
     background-color: var(--information-button-hover);
     mix-blend-mode: normal;
-    opacity: 0.3;
 }
 
 .information-button:active {
     background-color: var(--information-button-active);
     mix-blend-mode: normal;
-    opacity: 0.3;
 }
 
 .slider-paragraph {
@@ -352,7 +349,7 @@ a {
 }
 
 .popular-goods-foto {
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -429,19 +426,19 @@ a {
     background-color: var(--footer-info-blue);
 }
 
-.footer-list-nav-1 a {
+.footer-list-nav-menu-top a {
     color: var(--footer-list-nav-1);
 }
 
-.footer-list-nav-2 a {
+.footer-list-nav-menu-bottom a {
     color: var(--footer-list-nav-2);
 }
 
-.footer-list-nav a:hover {
+.footer-list-menu a:hover {
     text-decoration-line: underline;
 }
 
-.footer-list-nav a:active {
+.footer-list-menu a:active {
     mix-blend-mode: normal;
     opacity: 0.5;
 }
