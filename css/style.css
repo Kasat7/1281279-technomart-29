@@ -139,6 +139,9 @@
 
     /* .perforator-info */
     --perforator-info-background: #F1F5F7;
+
+    /* .popular-manufacturers */
+    --popular-manufacturers-border-img: 1px solid #EAEAEA;
 }
 
 body {
@@ -612,4 +615,9 @@ a {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+}
+
+.popular-manufacturers-img a {
+    border: var(--popular-manufacturers-border-img);
+    box-sizing: border-box;
 }
