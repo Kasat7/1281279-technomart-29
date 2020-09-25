@@ -63,7 +63,7 @@
     --slider-button-hover: #CA2C37;
     --slider-button-active: #BA2732;
 
-    /* .popular-goods & .popular-manufacturers */
+    /* .popular-headline */
     --popular-beige: #F9F5F0;
     --popular-button-red: #EE3643;
     --popular-gray: #32425C;
@@ -116,11 +116,11 @@
     --basic-orange: #FFD180;
     --basic-red: #EE3643;
 
-    /* .perforators-catalog */
-    --perforators-catalog: #F2F6F8;
+    /* .catalog-headline */
+    --catalog-headline: #F2F6F8;
 
-    /* .filter */
-    --filter: #F7F3EC;
+    /* .form-headline */
+    --form-headline: #F7F3EC;
 
     /* .buy */
     --buy-grey-rest: #63A63E;
@@ -132,10 +132,10 @@
     --bookmarks-border-hover: 3px solid #32425C;
     --bookmarks-border-active: 3px solid #32425C;
 
-    /* .page-switch */
-    --page-switch-border-rest: 1px solid #E5E5E5;
-    --page-switch-border-hover: 1px solid #C5C5C5;
-    --page-switch-border-active: 1px solid #EE3643;
+    /* .pagination */
+    --pagination-border-rest: 1px solid #E5E5E5;
+    --pagination-border-hover: 1px solid #C5C5C5;
+    --pagination-border-active: 1px solid #EE3643;
 
     /* .perforator-info */
     --perforator-info-background: #F1F5F7;
@@ -373,8 +373,7 @@ a {
     background-color: var(--slider-button-active);
 }
 
-.popular-goods,
-.popular-manufacturers {
+.popular-headline {
     background-color: var(--popular-beige);
     font-size: 30px;
     font-style: normal;
@@ -390,7 +389,7 @@ a {
     text-transform: uppercase;
 }
 
-.popular-goods-foto {
+.popular-goods h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -398,7 +397,7 @@ a {
     line-height: 20px;
 }
 
-.popular-goods-foto p {
+.popular-goods p {
     font-size: 17px;
     line-height: 18px;
 }
@@ -521,33 +520,33 @@ a {
     color: var(--basic-gray);
 }
 
-.main-list-top a {
+.breadcrumbs a {
     color: var(--basic-black);
 }
 
-.perforators-catalog {
-    background-color: var(--perforators-catalog);
+.catalog-headline {
+    background-color: var(--catalog-headline);
     color: var(--basic-gray);
 }
 
-.filter {
-    background-color: var(--filter);
+.form-headline {
+    background-color: var(--form-headline);
 }
 
-.filter-top a,
-.filter-bottom a {
+.filter-list a,
+.filter-direction-list a {
     color: var(--basic-black);
     opacity: 0.3;
 }
 
-.filter-top a:hover,
-.filter-bottom a:hover {
+.filter-list a:hover,
+.filter-direction-list a:hover {
     color: var(--basic-black);
     opacity: 1;
 }
 
-.filter-top a:active,
-.filter-bottom a:active {
+.filter-list a:active,
+.filter-direction-list a:active {
     color: var(--basic-red);
 }
 
@@ -577,9 +576,9 @@ a {
     border: var(--bookmarks-border-active);
 }
 
-.page-switch a {
+.pagination a {
     color: var(--basic-black);
-    border: var(--page-switch-border-rest);
+    border: var(--pagination-border-rest);
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -589,13 +588,13 @@ a {
     border-radius: 2px;
 }
 
-.page-switch a:hover {
-    border: var(--page-switch-border-hover);
+.pagination a:hover {
+    border: var(--pagination-border-hover);
 }
 
-.page-switch a:active {
+.pagination a:active {
     background-color: var(--basic-red);
-    border: var(--page-switch-border-active);
+    border: var(--pagination-border-active);
 }
 
 .perforator-info {
@@ -617,7 +616,7 @@ a {
     line-height: 24px;
 }
 
-.popular-manufacturers-img a {
+.popular-manufacturers a {
     border: var(--popular-manufacturers-border-img);
     box-sizing: border-box;
 }
