@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
+  <body class="page-body">
+    <header class="main-header">
 
       <div class="top-header">
           <a class="logo" href="#">Техномарт</a>
@@ -17,48 +17,50 @@
           <label class="search" for="search">Поиск:</label>
         </form>
           <a href="#" class="header-bookmarks">Закладки: 0</a>
-          <a href="#" class="basket">Корзина: 10</a>
+          <a href="#" class="basket catalog-basket">Корзина: 10</a>
           <a href="#" class="checkout">Оформить заказ</a>
       </div>
 
-      <div class="info-header">
-        <p class="info-header-paragraph">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a class="phone" href="tel:+78125550555"> +7 (812) 555-05-55</a>
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <div class="info-header-top">
+        <div class="info-header">
+         <p class="info-header-paragraph">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+         <a class="phone" href="tel:+78125550555"> +7 (812) 555-05-55</a>
+         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
      
-       <div class="account">
-         <a href="#">Равшан Джамшутович</a>
-         <a href="#">Выйти</a>
-         <a href="#">Мои заказы</a>
-         <a href="#">Личный кабинет</a>
-       </div>
+          <div class="account">
+           <a class="user" href="#">Равшан Джамшутович</a>
+           <a href="#">Выйти</a>
+           <a class="user-orders" href="#">Мои заказы</a>
+           <a class="user-profile" href="#">Личный кабинет</a>
+          </div>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a>Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a>Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
 
     </header>
 
-    <main>
+    <main class="container">
 
-     <ul>
+     <ul class="main-list-top">
        <li><a href="#">Каталог</a></li>
        <li><a href="#">Инструменты</a></li>
        <li><a>Перфораторы</a></li>
      </ul>
 
-     <h1>Перфораторы</h1>
+     <h1 class="perforators-catalog">Перфораторы</h1>
 
      <section>
-       <h2>Фильтр:</h2>
+       <h2 class="filter">Фильтр:</h2>
 
         <form>
          <h3>Цена:</h3>
@@ -83,24 +85,27 @@
      </section>
 
      <section>
-       <h2>Сортировка</h2>
+       <div class="filter">
+         <h2>Сортировка</h2>
 
-       <ul>
-         <li><a>По цене</a></li>
-         <li><a href="#">По типу</a></li>
-         <li><a href="#">По функционалу</a></li>
-       </ul>
+         <ul class="filter-top">
+           <li><a>По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По функционалу</a></li>
+         </ul>
 
-       <ul>
-         <li><a>По возрастанию</a></li>
-         <li><a href="#">По убыванию</a></li>
-       </ul>
+         <ul class="filter-bottom">
+           <li><a>По возрастанию</a></li>
+           <li><a href="#">По убыванию</a></li>
+         </ul>
+       </div>
+       
 
        <ul>
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 6000</h3>
-          <p>30500 Р.</p>
+          <p class="price-not">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -108,7 +113,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 6000</h3>
-          <p>30500 Р.</p>
+          <p class="price-not">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -116,7 +121,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 6000</h3>
-          <p>30500 Р.</p>
+          <p class="price-not">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -124,7 +129,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 3000</h3>
-          <p>22500 Р.</p>
+          <p class="price-not">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -132,7 +137,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 6000</h3>
-          <p>30500 Р.</p>
+          <p class="price-not">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -147,7 +152,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 3000</h3>
-          <p>22500 Р.</p>
+          <p class="price-not">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -155,7 +160,7 @@
          <li>
           <img src="">
           <h3>Перфоратор BOSCHBFG 6000</h3>
-          <p>30500 Р.</p>
+          <p class="price-not">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmarks">В закладки</a>
@@ -169,7 +174,7 @@
          </li>
        </ul>
 
-       <ul>
+       <ul class="page-switch">
          <li><a>1</a></li>
          <li><a href="#">2</a></li>
          <li><a href="#">3</a></li>
@@ -177,7 +182,7 @@
        </ul>
      </section>
 
-     <section>
+     <section class="perforator-info">
        <h2>Пара слов о перфораторах</h2>
        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
@@ -186,49 +191,50 @@
 
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <section class="footer-info">
-        <div class="footer-contacts">
-          <a href="#" class="logo">Техномарт</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55</p>
-        </div>
-        <div class="footer-list-menu">
-          <ul class="footer-list-menu-top">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="footer-list-menu-bottom">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструменты</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-          </ul>
-        </div>
+       <div class="footer-contacts">
+         <a class="logo" href="#">Техномарт</a>
+         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+           +7 (812) 555-05-55</p>
+       </div>
+       <div class="footer-list-menu">
+         <ul class="footer-list-menu-top">
+           <li><a href="#">Компания</a></li>
+           <li><a href="#">Новости</a></li>
+           <li><a href="#">Каталог</a></li>
+           <li><a href="#">Доставка</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+         <ul class="footer-list-menu-bottom">
+           <li><a href="#">Материалы</a></li>
+           <li><a href="#">Техника</a></li>
+           <li><a href="#">Инструменты</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+         </ul>
+       </div>
+         
       </section>
 
-        <section class="footer-connection">
-          <div class="company-rights">
-           <p>© 2010–2019 Компания «Техномарт» 
-            Все права защищены</p>
-          </div>
-          <div class="footer-social">
-            <ul>
-              <li><a href="#" class="social vk"><img src="img/vk.jpg"></a></li>
-              <li><a href="#" class="social facebook"></a><img src="img/facebook.jpg"></li>
-              <li><a href="#" class="social instagram"></a><img src="img/instagram.jpg"></li>
-            </ul>
-          </div>
-          <div class="footer-feedback">
-           <p>Обратная связь:</p>
-             <a href="mailto:mail@htmlacademy.ru" class="mail">mail@htmlacademy.ru</a>
-            <p>Разработано —</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="website">htmlacademy.ru</a> 
-          </div>
-         </section>
+      <section class="footer-connection">
+       <div class="company-rights">
+        <p>© 2010–2019 Компания «Техномарт» 
+         Все права защищены</p>
+       </div>
+       <div class="footer-social">
+         <ul>
+           <li><a class="social vk" href="#"><img src="img/vk.jpg"></a></li>
+           <li><a class="social facebook" href="#"></a><img src="img/facebook.jpg"></li>
+           <li><a class="social instagram" href="#"></a><img src="img/instagram.jpg"></li>
+         </ul>
+       </div>
+       <div class="footer-feedback">
+        <p>Обратная связь:</p>
+          <a class="mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+         <p>Разработано —</p>
+         <a class="website" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a> 
+       </div>
+      </section>
 
     </footer>
 
