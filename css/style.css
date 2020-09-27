@@ -145,6 +145,7 @@
 }
 
 body {
+    min-width: 960px;
     margin: 0;
     padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
@@ -161,6 +162,12 @@ body {
 .top-header {
     background-color: var(--top-header-blue-rest);
     color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 220px 270px 150px 150px 150px;
+    width: 940px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .top-header a {
@@ -200,7 +207,16 @@ body {
 }
 
 .info-header-top {
+    height: 278px;
     background-color: var(--basic-gray-top);
+}
+
+.info-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .info-header-paragraph {
@@ -269,6 +285,9 @@ a {
 
 .main-navigation {
     background-color: var(--main-navigation-blue-rest);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .main-navigation a {
@@ -281,6 +300,13 @@ a {
 
 .main-navigation a:active {
     background-color: var(--main-navigation-blue-active);
+}
+
+.main-navigation-list {
+    width: 940px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .materials {
@@ -304,6 +330,10 @@ a {
 }
 
 .information {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
     color: var(--basic-white);
     font-size: 24px;
     font-style: normal;
@@ -333,6 +363,13 @@ a {
 .information-button:active {
     background-color: var(--information-button-active);
     mix-blend-mode: normal;
+}
+
+.slider {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    visibility: hidden;
+    /* Сделал временно, чтобы слайдер не мешал контенту */
 }
 
 .slider-paragraph {
@@ -374,6 +411,8 @@ a {
 }
 
 .popular-headline {
+    display: grid;
+    grid-template-columns: 708px 232px;
     background-color: var(--popular-beige);
     font-size: 30px;
     font-style: normal;
@@ -387,6 +426,16 @@ a {
 .popular-button {
     background-color: var(--popular-button-red);
     text-transform: uppercase;
+    width: 192px;
+    height: 38px;
+}
+
+.popular-goods {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 318px;
+    gap: 20px;
+    padding: 0px;
 }
 
 .popular-goods h3 {
@@ -437,6 +486,12 @@ a {
     color: var(--list-services-button-rest);
 }
 
+.info-technomart {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 356px;
+}
+
 .info-technomart h2,
 .info-technomart h3 {
     font-style: normal;
@@ -457,6 +512,10 @@ a {
 .info-technomart-button {
     background-color: var(--info-technomart-button-red);
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .page-footer {
@@ -465,6 +524,15 @@ a {
 
 .footer-info {
     background-color: var(--footer-info-blue);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--footer-info-blue);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-list-nav-menu-top a {
@@ -484,8 +552,31 @@ a {
     opacity: 0.5;
 }
 
+.footer-list-menu-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-list-menu-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-list-menu-bottom a {
+    color: var(--basic-orange);
+}
+
 .footer-contacts {
     color: var(--footer-contacts);
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--footer-connection);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-connection {
@@ -616,7 +707,33 @@ a {
     line-height: 24px;
 }
 
+.popular-manufacturers {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 145px 145px;
+    padding: 0px;
+}
+
 .popular-manufacturers a {
     border: var(--popular-manufacturers-border-img);
     box-sizing: border-box;
 }
+
+.page {
+    height: 100%;
+}
+
+.header-navigation {
+    background-color: var(--top-header-blue-rest);
+    height: 42px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+li {
+    list-style-type: none;
+   }
