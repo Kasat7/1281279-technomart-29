@@ -734,6 +734,47 @@ a {
     padding: 0 10px;
 }
 
-li {
-    list-style-type: none;
-   }
+.slider ul,
+.info-technomart-top ul,
+.footer-social ul,
+.catalog-filter ul,
+.main-navigation-list,
+.popular-goods,
+.popular-manufacturers,
+.list-services,
+.footer-list-menu-top,
+.footer-list-menu-bottom,
+.breadcrumbs,
+.catalog-filter ul,
+.catalog-sorting ul,
+.footer-list-menu ul {
+    list-style: none;
+}
+
+.delivery,
+.guarantee,
+.credit {
+    display: none;
+}
+
+.service-active {
+    display: block;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.services-top {
+    grid-column: 1/3;
+}
+
+.list-services-top {
+    grid-row: 2/3;
+}
+
+.service-active {
+    grid-row: 2/3;
+}
