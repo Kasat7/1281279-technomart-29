@@ -618,10 +618,28 @@ a {
 .catalog-headline {
     background-color: var(--catalog-headline);
     color: var(--basic-gray);
+    height: 89px;
 }
 
 .form-headline {
     background-color: var(--form-headline);
+    height: 38px;
+}
+
+.form-headline-filter {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    background-color: var(--form-headline);
+}
+
+.filter-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter-direction-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .filter-list a,
@@ -667,6 +685,11 @@ a {
     border: var(--bookmarks-border-active);
 }
 
+.pagination {
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+}
+
 .pagination a {
     color: var(--basic-black);
     border: var(--pagination-border-rest);
@@ -690,6 +713,14 @@ a {
 
 .perforator-info {
     background-color: var(--perforator-info-background);
+    height: 261px;
+}
+
+.perforator-info-top {
+    background-color: var(--perforator-info-background);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .perforator-info h2 {
@@ -777,4 +808,22 @@ a {
 
 .service-active {
     grid-row: 2/3;
+}
+
+.breadcrumbs {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 42px;
+}
+
+.product-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.catalog-headline-filter {
+    display: grid;
+    grid-template-columns: 220px 700px;
+    gap: 20px;
 }
