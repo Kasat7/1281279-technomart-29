@@ -42,6 +42,7 @@
     --main-navigation-blue-rest: #32425C;
     --main-navigation-blue-hover: #293449;
     --main-navigation-blue-active: #1D2739;
+    --main-navigation-box-shadow: inset 0px -5px 0px #293449;
 
     /*.information */
     --materials-orange: #FFBF47;
@@ -142,6 +143,7 @@
 
     /* .popular-manufacturers */
     --popular-manufacturers-border-img: 1px solid #EAEAEA;
+    --popular-manufacturers-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -209,12 +211,15 @@ body {
 .info-header-top {
     height: 278px;
     background-color: var(--basic-gray-top);
+    margin-bottom: 59px;
 }
 
 .info-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 940px;
+    height: 158px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -226,6 +231,7 @@ body {
     line-height: 23px;
     letter-spacing: 0px;
     text-align: left;
+    margin-left: 36px;
 
 }
 
@@ -238,6 +244,8 @@ body {
     letter-spacing: 0px;
     text-align: left;
     border: var(--phone-border);
+    padding: 10px 40px 10px 70px;
+    margin: 0 0 10px 0;
 }
 
 .entrance,
@@ -273,6 +281,14 @@ a {
     color: var(--account-black-rest);
 }
 
+.entrance {
+    padding: 10px 27px 10px 45px;
+}
+
+.registration {
+    padding: 10px 24px 10px 22px;
+}
+
 .entrance:hover,
 .registration:hover {
     color: var(--account-red-hover);
@@ -288,6 +304,7 @@ a {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    box-shadow: var(--main-navigation-box-shadow);
 }
 
 .main-navigation a {
@@ -305,8 +322,20 @@ a {
 .main-navigation-list {
     width: 940px;
     height: 60px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-list li {
+    display: inline-block;
+}
+
+.main-navigation-list a {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    padding: 20px 25px 10px 25px;
+    margin: 0 3px;
 }
 
 .materials {
@@ -341,6 +370,7 @@ a {
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;
+    margin-bottom: 59px;
 }
 
 .information-button {
@@ -408,6 +438,10 @@ a {
 
 .slider-button:active {
     background-color: var(--slider-button-active);
+}
+
+.popular {
+    margin-bottom: 70px;
 }
 
 .popular-headline {
@@ -527,8 +561,8 @@ a {
 }
 
 .footer-top {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--footer-info-blue);
     width: 940px;
     margin: 0 auto;
@@ -553,13 +587,21 @@ a {
 }
 
 .footer-list-menu-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.footer-list-menu-top li {
+    margin-left: 59px;
 }
 
 .footer-list-menu-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-list-menu-bottom li {
+    margin-left: 59px;
 }
 
 .footer-list-menu-bottom a {
@@ -571,8 +613,9 @@ a {
 }
 
 .footer-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--footer-connection);
     width: 940px;
     margin: 0 auto;
@@ -596,6 +639,7 @@ a {
 .mail:active,
 .website:active {
     color: var(--basic-red);
+    text-decoration: none;
 }
 
 .catalog-basket {
@@ -740,14 +784,30 @@ a {
 
 .popular-manufacturers {
     display: grid;
+    gap: 20px;
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 145px 145px;
     padding: 0px;
 }
 
-.popular-manufacturers a {
+.popular-manufacturers li,
+.popular-goods li {
     border: var(--popular-manufacturers-border-img);
     box-sizing: border-box;
+}
+
+.popular-manufacturers li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-manufacturers li:hover {
+    box-shadow: var(--popular-manufacturers-box-shadow);
+}
+
+.popular-manufacturers li:active {
+    opacity: 0.3;
 }
 
 .page {
@@ -826,4 +886,43 @@ a {
     display: grid;
     grid-template-columns: 220px 700px;
     gap: 20px;
+}
+
+.footer-social li {
+    display: inline-block;
+    background: var(--social-blue);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social svg {
+    margin-top: 11px;
+}
+
+.vk svg {
+    margin-top: 15px;
+}
+
+.footer-social li:hover,
+.footer-social li:active {
+    background: var(--social-red);
+}
+
+.footer-feedback {
+    display: inline;
+}
+
+.feedback {
+    float: left;
+    width: 140px;
+    margin: 0
+}
+
+.design-copyright {
+    float: right;
+    margin: 0;
+    width: 140px;
 }
