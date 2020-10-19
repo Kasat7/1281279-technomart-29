@@ -25,8 +25,8 @@
           </svg>
         </a>
         <form class="menu-search">
-          <input type="text" id="search">
-          <label class="search" for="search">Поиск:</label>
+          <input type="text" id="search" placeholder="Поиск:">
+          <label class="search" for="search"></label>
         </form>
         <a href="#" class="header-bookmarks">Закладки: 0</a>
         <a href="#" class="basket">Корзина: 0</a>
@@ -97,6 +97,7 @@
               </div>
               <img src="img/drill.jpg" width="620" height="266" alt="Фото дрели">
             </li>
+            <a class="slider-button" href="#">Открыть каталог</a>
             <li class="slide-item slide-current">
               <div class="slider-paragraph">
                 <h2 class="slider-name">Перфораторы</h2>
@@ -104,13 +105,13 @@
               </div>
               <img src="img/perforator.jpg" width="620" height="266" alt="Фото перфоратора">
             </li>
+            <a class="slider-button" href="#">Открыть каталог</a>
           </ul>
-          <a class="slider-button" href="#">Открыть каталог</a>
-          <ul class="button-back-forward">
+          <ul class="buttons-back-forward">
             <li><button class="back" type="button" aria-label="Предыдущий слайд"></button></li>
             <li><button class="forward" type="button" aria-label="Следующий слайд"></button></li>
           </ul>
-          <ul class="button-slider-dot">
+          <ul class="slider-dots">
             <li><button class="slider-dot-left" type="button" aria-label="Слайд 1"></button></li>
             <li><button class="slider-dot-right slider-dot-active" type="button" aria-label="Слайд 2"></button></li>
           </ul>
@@ -135,8 +136,7 @@
                 <a class="bookmarks" href="#">В закладки</a>
               </div>
               <div class="goods-card-name">
-                <p>Перфоратор BOSCH</p>
-                <p class="goods-card-name-bottom">BFG 9000</p>
+                <h3>Перфоратор BOSCH BFG 9000</h3>
               </div>
               <div class="goods-card-price">
                 <p class="price-not">32500 Р.</p>
@@ -158,8 +158,7 @@
                 <a class="bookmarks" href="#">В закладки</a>
               </div>
               <div class="goods-card-name">
-                <p>Перфоратор BOSCH</p>
-                <p class="goods-card-name-bottom">BFG 3000</p>
+                <h3>Перфоратор BOSCH BFG 3000</h3>
               </div>
               <div class="goods-card-price">
                 <p class="price-not">22500 Р.</p>
@@ -181,8 +180,7 @@
                 <a class="bookmarks" href="#">В закладки</a>
               </div>
               <div class="goods-card-name">
-                <p>Перфоратор BOSCH</p>
-                <p class="goods-card-name-bottom">BFG 6000</p>
+                <h3>Перфоратор BOSCH BFG 6000</h3>
               </div>
               <div class="goods-card-price">
                 <p class="price-not">30500 Р.</p>
@@ -204,8 +202,7 @@
                 <a class="bookmarks" href="#">В закладки</a>
               </div>
               <div class="goods-card-name">
-                <p>Перфоратор BOSCH</p>
-                <p class="goods-card-name-bottom">BFG 2000</p>
+                <h3>Перфоратор BOSCH BFG 2000</h3>
               </div>
               <div class="goods-card-price">
                 <p class="price-not hidden">12500 Р.</p>
@@ -265,10 +262,9 @@
           </div>
           <div class="list-services-wrapper">
             <ul class="list-services">
-              <li class="list-services-button list-services-current"><a class="list-services-button-delivery"
-                  href="#">Доставка</a></li>
-              <li class="list-services-button"><a class="list-services-button-warranty" href="#">Гарантия</a></li>
-              <li class="list-services-button"><a class="list-services-button-credit" href="#">Кредит</a></li>
+              <li><a class="list-services-button list-services-current" href="#">Доставка</a></li>
+              <li><a class="list-services-button" href="#">Гарантия</a></li>
+              <li><a class="list-services-button" href="#">Кредит</a></li>
             </ul>
           </div>
           <div class="service-delivery service-active">
@@ -301,7 +297,8 @@
       <section class="info-technomart">
         <div class="info-technomart-top">
           <h2>Компания «Техномарт»</h2>
-          <p class="info-technomart-paragraph-top">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+          <p class="info-technomart-paragraph-top">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
+            для<br>
             ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
             гастарбайтерах.</p>
           <p class="info-technomart-paragraph-bottom">Мы можем доставить ваш товар в самые отдаленные точки России!<br>

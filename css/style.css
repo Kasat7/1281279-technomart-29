@@ -232,6 +232,17 @@ body {
     width: 230px;
     border: none;
     padding: 5px 0 5px 40px;
+    color: var(--basic-white);
+}
+
+.menu-search input::-webkit-input-placeholder {
+    color: var(--basic-white);
+    opacity: 1;
+}
+
+.menu-search input::-moz-placeholder {
+    color: var(--basic-white);
+    opacity: 1;
 }
 
 .menu-search input:hover {
@@ -247,14 +258,11 @@ body {
 }
 
 .menu-search .search {
+    visibility: hidden;
     margin-left: 40px;
     position: absolute;
     top: 11px;
     left: 0
-}
-
-.menu-search input:focus + .search {
-    display: none;
 }
 
 .header-bookmarks::before {
@@ -564,7 +572,7 @@ a {
     display: block;
 }
 
-.button-back-forward button {
+.buttons-back-forward button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -782,17 +790,15 @@ a {
     align-items: center;
 }
 
-.goods-card-name p {
+.goods-card-name h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     margin: 0;
-}
-
-.goods-card-name-bottom {
-    padding-top: 5px;
+    width: 157px;
+    height: 41px;
 }
 
 .goods-card-price {
@@ -884,45 +890,22 @@ a {
     height: 279px;
     width: 10px;
     right: 0;
-    top: -47px;
+    top: -30px;
     z-index: 10;
 }
 
 
 .list-services-button {
-    position: relative;
-    display: block;
-    width: 240px;
-    height: 61px;
-    margin-bottom: 1px;
-    background-color: var(--list-services-button-rest);
-    box-shadow: var(--list-services-button-box-shadow);
-}
-
-.list-services-button a {
-    position: absolute;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
-}
-
-.list-services-button-delivery {
-    width: 79px;
-    height: 30px;
-    padding: 13px 139px 17px 22px;
-}
-
-.list-services-button-warranty {
-    width: 78px;
-    height: 30px;
-    padding: 13px 140px 17px 22px;
-}
-
-.list-services-button-credit {
-    width: 61px;
-    height: 30px;
-    padding: 13px 157px 17px 22px;
+    display: block;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 1px;
+    background-color: var(--list-services-button-rest);
+    box-shadow: var(--list-services-button-box-shadow);
 }
 
 .list-services-button:hover {
@@ -942,7 +925,7 @@ a {
     box-shadow: none;
 }
 
-.list-services-current a {
+.list-services-current {
     color: var(--basic-gray);
 }
 
@@ -950,7 +933,7 @@ a {
     background-color: var(--basic-white);
 }
 
-.list-services-current:hover a {
+.list-services-current:hover {
     color: var(--basic-gray);
 }
 
@@ -958,7 +941,7 @@ a {
     background-color: var(--basic-white);
 }
 
-.list-services-current:active a {
+.list-services-current:active {
     color: var(--basic-gray);
 }
 
@@ -1537,16 +1520,11 @@ a {
     height: 2px;
 }
 
-.info-technomart-top {
-    min-height: 356px;
-}
-
 .info-technomart-top h2 {
     margin: 0;
 }
 
 .contacts-map {
-    min-height: 356px;
     margin-left: 180px;
 }
 
