@@ -653,7 +653,7 @@ a {
     margin: 0;
 }
 
-.slider-dot-left {
+.slider-dot {
     padding: 0;
     width: 10px;
     height: 10px;
@@ -661,17 +661,10 @@ a {
     border-radius: 50%;
     cursor: pointer;
     border-color: transparent;
-    margin-right: 10px;
 }
 
-.slider-dot-right {
-    padding: 0;
-    width: 10px;
-    height: 10px;
-    background-color: var(--basic-white);
-    border-radius: 50%;
-    cursor: pointer;
-    border-color: transparent;
+.slider-dot:last-child {
+    margin-right: 10px;
 }
 
 .slider-dot-active {
@@ -807,10 +800,6 @@ a {
     height: 41px;
 }
 
-.perforator-two-thousand {
-    margin-top: 30px;
-}
-
 .goods-card-price {
     display: flex;
     flex-direction: column;
@@ -853,8 +842,8 @@ a {
     color: var(--basic-white);
     width: 141px;
     height: 38px;
-    margin-top: 13px;
-    margin-bottom: 21px;
+    margin-top: auto;
+    margin-bottom: 0;
     margin-left: 45px;
 }
 
@@ -920,9 +909,6 @@ a {
 
 .list-services-button:active {
     background-color: var(--list-services-button-active);
-}
-
-.list-services-button:active {
     color: var(--list-services-button-rest);
 }
 
