@@ -26,7 +26,7 @@
         </a>
         <form class="menu-search">
           <input type="text" id="search" placeholder="Поиск:">
-          <label class="search" for="search"></label>
+          <label class="search" for="search">Поиск:</label>
         </form>
         <a href="#" class="header-bookmarks">Закладки: 0</a>
         <a href="#" class="basket catalog-basket">Корзина: 10</a>
@@ -84,35 +84,63 @@
           <h2 class="form-headline">Фильтр:</h2>
 
           <form>
-            <h3>Цена:</h3>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+            <div class="price-form">
+              <h3 class="catalog-filter-headline">Цена:</h3>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-              <input class="min-price" type="text" value="0"> -
-              <input class="max-price" type="text" value="30 000">
+              <div class="price-controls">
+                <input class="min-price" type="text" value="0"> -
+                <input class="max-price" type="text" value="30 000">
+              </div>
             </div>
 
-            <h3 class="catalog-filter-manufacturers">Производители:</h3>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item catalog-filter-item-active">BOSCH</li>
-              <li class="catalog-filter-item">ИНТЕРСКОЛ</li>
-              <li class="catalog-filter-item catalog-filter-item-active">MAKIta</li>
-              <li class="catalog-filter-item">Dewalt</li>
-              <li class="catalog-filter-item">Hitachi</li>
-            </ul>
+            <div class="manufacturers-form">
+              <h3 class="catalog-filter-headline">Производители:</h3>
+              <ul class="catalog-filter-list">
+                <li class="checkbox">
+                  <input class="visually-hidden checkbox-input" id="filter-bosh" type="checkbox" name="bosh" checked>
+                  <label for="filter-bosh">Bosh</label>
+                </li>
+                <li class="checkbox">
+                  <input class="visually-hidden checkbox-input" id="filter-interskol" type="checkbox" name="interskol">
+                  <label for="filter-interskol">Интерскол</label>
+                </li>
+                <li class="checkbox">
+                  <input class="visually-hidden checkbox-input" id="filter-makita" type="checkbox" name="makita"
+                    checked>
+                  <label for="filter-makita">Makita</label>
+                </li>
+                <li class="checkbox">
+                  <input class="visually-hidden checkbox-input" id="filter-dewalt" type="checkbox" name="dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li class="checkbox">
+                  <input class="visually-hidden checkbox-input" id="filter-hitachi" type="checkbox" name="hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </div>
 
-            <h3>Питание:</h3>
-            <ul>
-              <li class="catalog-filter-bottom-item catalog-filter-bottom-item-active">Аккумуляторные</li>
-              <li class="catalog-filter-bottom-item">Сетевые</li>
-            </ul>
+            <div class="power-supply-form">
+              <h3 class="catalog-filter-headline">Питание:</h3>
+              <ul class="catalog-filter-list">
+                <li class="radiobutton">
+                  <input class="visually-hidden radiobutton-input" id="battery" type="radio" name="power-type" checked>
+                  <label for="battery">Аккумуляторные</label>
+                </li>
+                <li class="radiobutton">
+                  <input class="visually-hidden radiobutton-input" id="net" type="radio" name="power-type">
+                  <label for="net">Сетевые</label>
+                </li>
+              </ul>
 
-            <button class="catalog-filter-batton" type="button">Показать</button>
+              <button class="catalog-filter-button" type="submit">Показать</button>
+            </div>
           </form>
         </section>
 
@@ -121,19 +149,19 @@
             <h2>Сортировка:</h2>
 
             <ul class="filter-list">
-              <li><a>По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
+              <li><a class="filter-item filter-item-active">По цене</a></li>
+              <li><a class="filter-item" href="#">По типу</a></li>
+              <li><a class="filter-item" href="#">По функционалу</a></li>
             </ul>
 
             <ul class="filter-direction-list">
-              <li><a class="increase" href="#" aria-label="По возрастанию"></a></li>
+              <li><a class="increase increase-active" href="#" aria-label="По возрастанию"></a></li>
               <li><a class="decrease" href="#" aria-label="По убыванию"></a></li>
             </ul>
           </div>
 
 
-          <ul class="product-photos">
+          <ul class="products-list">
             <li>
               <div class="goods-card">
                 <div class="goods-card-image">
