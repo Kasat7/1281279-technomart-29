@@ -1211,9 +1211,12 @@ a {
     margin: 0;
 }
 
-.price-form,
-.manufacturers-form {
+.form-section {
     border-bottom: var(--catalog-filter-button-border);
+}
+
+.form-section:last-child {
+    border-bottom: none;
 }
 
 .catalog-filter-button {
@@ -1284,11 +1287,6 @@ a {
     background-image: url(../img/icon-down-dir-red.svg);
 }
 
-.increase-active::before {
-    background-image: url(../img/icon-down-dir-red.svg);
-    opacity: 1;
-}
-
 .decrease {
     position: relative;
 }
@@ -1313,10 +1311,9 @@ a {
     background-image: url(../img/icon-down-dir-red.svg);
 }
 
-.decrease-active::before {
+.active::before {
     background-image: url(../img/icon-down-dir-red.svg);
     opacity: 1;
-    transform: rotate(180deg);
 }
 
 .filter-item {
