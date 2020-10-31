@@ -403,16 +403,16 @@
 
   </footer>
 
-  <section class="modal-email">
+  <section class="modal-feedback">
     <form>
-      <div class="madal-name">
-        <div class="madal-name-left">
+      <div class="modal-name">
+        <div class="modal-name-left">
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Имя Фамилия">
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
         </div>
-        <div class="madal-name-right">
+        <div class="modal-name-right">
           <label for="email">Ваш e-mail:</label>
-          <input type="text" id="email" placeholder="email@example.com">
+          <input type="text" id="email" name="email" placeholder="email@example.com">
         </div>
 
       </div>
@@ -420,7 +420,7 @@
         <label for="letter">Текст письма:</label>
         <textarea id="letter" placeholder="В свободной форме"></textarea>
       </div>
-      <div class="modal-button-top">
+      <div class="modal-button-wrapper">
         <button class="button-modal" type="submit">Отправить</button>
       </div>
 
