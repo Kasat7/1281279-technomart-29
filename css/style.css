@@ -272,7 +272,6 @@ body {
 }
 
 .menu-search .search {
-    display: none;
     margin-left: 40px;
     position: absolute;
     top: 11px;
