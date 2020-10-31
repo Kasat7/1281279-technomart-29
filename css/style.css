@@ -271,13 +271,6 @@ body {
     color: var(--basic-black);
 }
 
-.menu-search .search {
-    margin-left: 40px;
-    position: absolute;
-    top: 11px;
-    left: 0
-}
-
 .header-bookmarks::before {
     content: '';
     position: absolute;
