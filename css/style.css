@@ -272,7 +272,7 @@ body {
 }
 
 .header-bookmarks::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 14px;
     height: 16px;
@@ -324,7 +324,6 @@ body {
 .info-header {
     display: flex;
     justify-content: space-between;
-    align-items: top;
     width: 940px;
     height: 158px;
     margin: 0 auto;
@@ -573,7 +572,7 @@ a {
     position: relative;
 }
 
-.slider-top {
+.slider-list {
     margin: 0;
     padding: 0;
 }
@@ -616,9 +615,20 @@ a {
 
 .slider-paragraph {
     background-color: var(--slider-paragraph);
-    position: absolute;
     width: 620px;
-    height: 104px;
+    /*position: absolute;*/
+}
+
+.slide-drill {
+    background-image: url(../img/drill.jpg);
+    background-repeat: no-repeat;
+    height: 266px;
+}
+
+.slide-perforator {
+    background-image: url(../img/perforator.jpg);
+    background-repeat: no-repeat;
+    height: 266px;
 }
 
 .slider-name {
@@ -630,9 +640,9 @@ a {
     letter-spacing: 0px;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 23px;
-    margin-left: 24px;
-    margin-bottom: 0;
+    padding-top: 23px;
+    padding-left: 24px;
+    margin: 0;
 }
 
 .slider-info {
@@ -903,7 +913,7 @@ a {
 .list-services::before {
     content: "";
     position: absolute;
-    background-image: url(../img/servise.png);
+    background-image: url(../img/service.png);
     background-repeat: no-repeat;
     height: 279px;
     width: 10px;
@@ -1715,6 +1725,7 @@ a {
 .catalog-account-top {
     background-color: var(--basic-white);
     padding: 12px 57px 7px 56px;
+    margin-top: -10px;
 }
 
 .exit {
