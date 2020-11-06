@@ -19,6 +19,7 @@
     --logo-red: #EE3643;
     --logo-red-active: #BA2732;
     --logo-box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    --logo-after-red: #b52933;
 
     /* .search */
     --search-white: #FFFFFF;
@@ -200,8 +201,17 @@ body {
 
 .logo {
     background-color: var(--logo-red);
-    box-shadow: var(--logo-box-shadow);
     padding: 12px 56px;
+}
+
+.logo:after {
+    position: absolute;
+    content: '';
+    left: 205px;
+    top: 41px;
+    width: 220px;
+    height: 4px;
+    background: var(--logo-after-red);
 }
 
 .logo:active {
@@ -343,7 +353,7 @@ body {
 
 .info-header-address {
     margin-top: 55px;
-    width: 280px;
+    width: 290px;
 }
 
 .catalog-info-header-address {
@@ -364,8 +374,8 @@ body {
     letter-spacing: 0px;
     text-align: left;
     border: var(--phone-border);
-    padding: 10px 45px 7px 70px;
-    margin: 0 0 10px 15px;
+    padding: 10px 45px 7px 66px;
+    margin: 0 0 10px 27px;
     position: relative;
 }
 
@@ -878,10 +888,9 @@ a {
 
 .services {
     background-color: var(--services-gray);
-    min-height: 522px;
     display: grid;
     grid-template-columns: max-content max-content max-content;
-    grid-template-rows: 1fr 2fr;
+    min-height: 522px;
 }
 
 .services-container {
@@ -904,7 +913,7 @@ a {
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .list-services {
@@ -967,17 +976,17 @@ a {
 .info-technomart {
     display: grid;
     grid-template-columns: 460px 300px;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 70px;
     padding-bottom: 5px;
 }
 
-.info-technomart h3{
+.info-technomart h3 {
     margin-bottom: 20px;
 }
 
 .info-technomart h4 {
-    margin: 25px 0 24px 0;
+    margin: 30px 0 24px 0;
 }
 
 .info-technomart h3,
@@ -1028,7 +1037,7 @@ a {
 
 .footer-info {
     background-color: var(--footer-info-blue);
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .footer-top {
@@ -1116,7 +1125,7 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    margin-top: -20px;
+    margin-top: -16px;
 }
 
 .footer-bottom {
@@ -1131,7 +1140,8 @@ a {
 
 .footer-connection {
     background-color: var(--footer-connection);
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .mail,
@@ -1329,15 +1339,17 @@ a {
 
 .filter-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 70px 70px 123px;
+    gap: 50px;
 }
 
 .filter-direction-list {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 46px;
+    grid-template-columns: 11px 11px;
+    gap: 10px;
+    margin-left: 36px;
     width: 43px;
     height: 11px;
 }
@@ -1457,7 +1469,7 @@ a {
 .pagination {
     display: flex;
     padding: 0;
-    margin: 37px 0 32px 0;
+    margin: 42px 0 32px 0;
 }
 
 .pagination li {
@@ -1622,19 +1634,19 @@ a {
 .service-delivery {
     background-image: url(../img/auto.png);
     background-repeat: no-repeat;
-    background-position: 100% 300%;
+    background-position: 100% 220%;
 }
 
 .service-guarantee {
     background-image: url(../img/medal.png);
     background-repeat: no-repeat;
-    background-position: 100% 300%;
+    background-position: 100% 220%;
 }
 
 .service-credit {
     background-image: url(../img/credit.png);
     background-repeat: no-repeat;
-    background-position: 100% 300%;
+    background-position: 100% 220%;
 }
 
 .service-active {
@@ -1656,7 +1668,7 @@ a {
 
 .list-services-wrapper {
     grid-row: 2/3;
-    margin-top: 55px;
+    margin-top: 30px;
 }
 
 .breadcrumbs {
@@ -1683,7 +1695,7 @@ a {
     grid-template-columns: 220px 220px 220px;
     gap: 20px;
     padding: 0;
-    margin: 26px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .catalog-headline-filter {
@@ -1707,8 +1719,9 @@ a {
 .footer-social ul {
     display: grid;
     grid-template-columns: 44px 44px 44px;
-    gap: 4px;
-    margin-top: 2px;
+    gap: 2px;
+    margin-top: 4px;
+    margin-left: -8px;
 }
 
 .social {
@@ -1735,7 +1748,16 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    margin-top: -5px;
+    margin-top: -15px;
+    margin-left: 5px;
+}
+
+.feedback {
+    margin-left: 5px;
+}
+
+.design-copyright {
+    margin-left: 5px;
 }
 
 .catalog-account {
