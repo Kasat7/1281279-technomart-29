@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -94,8 +94,10 @@
                 <div class="toggle max-toggle"></div>
               </div>
               <div class="price-controls">
-                <input class="min-price" type="text" value="0"> -
-                <input class="max-price" type="text" value="30 000">
+                <label class="visually-hidden" for="min-price"></label>
+                <input class="min-price" type="text" id="min-price" value="0"> -
+                <label class="visually-hidden" for="max-price"></label>
+                <input class="max-price" type="text" id="max-price" value="30 000">
               </div>
             </div>
 
